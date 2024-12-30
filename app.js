@@ -22,12 +22,13 @@ app.use("/api/v1", Cart);
 app.use("/api/v1", Order);
 
 
-// app.get("/",(req,res) =>{
-//     res.send("backend!");
-// });
 
 // create port
 app.listen(process.env.PORT, () =>{
     console.log(`server started at port ${process.env.PORT}`);
     
+});
+
+app.get("/",(req,res) =>{
+    res.send("SERVER STARTED RUNNING");
 });
